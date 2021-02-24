@@ -1,0 +1,39 @@
+button{
+background-color:blueviolet;
+text-align:right;
+}
+
+body {
+background-color: #9090ad;
+}
+
+figure{
+/*display: inline;*/
+text-align: right;
+}
+
+table{
+text-align: center;
+background: #b366ff;
+}
+
+Video{
+border: 15px orange double;
+width: 75%;
+}
+
+figcaption{
+font-size: 10px; 
+text-align: center; 
+}
+
+h1{
+font-family: "COPPERLATE", "COPPERPLATE", fantasy;
+font-size: 40px;
+}
+
+#contactos{
+text-align: center;
+background-color: #b366ff;
+font-size: 25px;
+}

@@ -1,0 +1,52 @@
+<html> 
+	<head>
+ 	<Title>Login</Title>
+	<link href="login.css" type="text/css" rel="stylesheet">
+	<meta charset=”UTF-8”> 
+	</head>
+		<body>
+		<h2>Login - Dicas de LOL</h2> <a href="../fasedetestes.html">Home</a>
+		<form>
+		<fieldset><legend>Identificação do Utilizador</legend>
+			<p>Nome de Utilizador: <input type="text" name="nnome" id="inome" size="70" maxlength="80" placeholder="Nome de Utilizador"></p>
+			<p>Password: <input type="password" name="npass" id="ipass" size="25" maxlength="10" placeholder="Máximo 10 Digitos"></p>
+			<p>Email: <input type="text" name="nemail" id="iemail" size="70" maxlength="90" placeholder="Entroduza o seu Email"></p>
+			
+			<p><fieldset><legend id="genero">Género:</legend>
+			<p><input type="radio" name="ngenero" id="imasc"><label for="imasc">Masculino</p>
+			<p><input type="radio" name="ngenero" id="ifem"><label for="ifem">Feminino</p>
+			<p><input type="radio" name="ngenero" id="iind"><label for="ifem">Indefinido</fieldset></p>
+			<p>Data de Nascimento: <input type="date" name="ndata" id="idata"></p>
+		</fieldset>
+		<fieldset><legend>Morada para Giveaways (opcional)</legend>
+				<p>Rua: <input type="text" name="nrua" id="irua" size="50" maxlength="80" placeholder="Nome da Rua"></p>
+				<p>Número: <input type="number" name="nnumero" id="inumero" size="50" min="0" max="999999999" placeholder="Telemovel"></p>
+				<p>Código Postal: <input type="number" name="ncod" id="icod" min="0" max="8" placeholder="">-<input type="number" name="ncod" id="icod" min="0" max="8" placeholder=""></p>
+				<p>Localidade: <input type="text" name="nloc" id="iloc" size="30" maxlength="80" placeholder="Distrito/Cidade" list="localidades"></p>
+				<datalist id="localidades">
+					<option value="Matosinhos"></option>
+					<option value="Maia"></option>
+					<option value="Santo Tirso"></option>
+					<option value="Trofa"></option>
+				</datalist>
+		</fieldset>
+		<fieldset><legend>Notificações</legend>
+				<p>Gostaria de receber notificações deste site: <input type="checkbox" name="ndisp" id="idisp"></p>
+				<p>Escolha as Notificações: <input type="text" name="nloc" id="iloc" size="40" maxlength="80" placeholder="Escolha as Notificações" list="ufcd"></p>			
+				<datalist id="ufcd">
+					<option value="Escolha as Notificações"></option>
+					<option value="Todas"></option>
+					<option value="Apenas de Giveaways"></option>
+					<option value="Apenas Atualizações dos Champions"></option>
+					<option value="Apenas Atualizações do Site"></option>
+				</datalist>
+				<p>Mensalidade: <input type="number" name="nquant" id="iquant" size="5" maxlength="3" placeholder="Numero de Meses desejados"></p>
+				<p>Preço total: <input type="number" name="ntotal" id="itotal" size="5" maxlength="3" placeholder="Total a Pagar" readonly="true"></p>
+		</fieldset>
+			<fieldset><legend>Observações:</legend>
+				<b>Mensagem: <textarea name="nmsg" id="imsg" cols="50" rows="10" placeholder="Escreva aqui a sua mensagem"></textarea></b>
+			</fieldset>
+				<input type="submit" value="Enviar">
+		</form>
+		</body>
+</html>
